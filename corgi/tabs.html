@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Corgis</title>
+    <script src="../jquery-1.11.2.js"></script>
+    <script src="./tabs.js"></script>
+    <link href="./tabs.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.17.2/build/cssreset/cssreset-min.css">
+  </head>
+
+  <body>
+
+
+    <script>
+      $(function() {
+        $('.tabs').tabs();
+      });
+    </script>
+
+    <ul class="tabs" data-content-tabs="#content-tabs">
+      <li><a href="#alaskan" class="active">Alaskan Malamute</a></li>
+      <li><a href="#eskimo">Miniature American Eskimo Dog</a></li>
+      <li><a href="#beagle">Beagle</a></li>
+    </ul>
+
+    <div id="content-tabs">
+      <div class="tab-pane active" id="alaskan"><p> Alaskan Malamute: his arctic sled dog was bred for strength and endurance,
+        and you don't want to get into a wrestling match with an Alaskan Malamute!
+        They are incredibly strong, and you will need to commit to obedience training early
+        so that you don't end up struggling to control a full-grown dog. They are independent
+        and can be stubborn, so training can be a challenge.  </p></div>
+      <div class="tab-pane" id="eskimo"><p>Miniature American Eskimo Dog:
+        The medium-length coat of the Miniature American Eskimo Dog only requires an occasional brushing.
+        But because he sheds excessively you may find yourself brushing him daily to remove loose hair.</p></div>
+      <div class="tab-pane" id="beagle"><p>Beagle: The Beagle is merry, friendly, gentle, playful, and even-tempered.
+        He has a sensitive nature. He can be distant with strangers until they've won him over. </p></div>
+    </div>
+
+  </body>
+</html>

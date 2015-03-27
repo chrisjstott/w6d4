@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Kittens</title>
+    <script src="../jquery-1.11.2.js"></script>
+    <script src="./tabs.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.17.2/build/cssreset/cssreset-min.css">
+    <link href="./tabs.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+
+
+    <script>
+      $(function() {
+        $('.carousel').carousel();
+      });
+    </script>
+
+    <div class="carousel">
+      <div class="items">
+        <img src="http://placecorgi.com/400/400" class="active" />
+        <img src="http://placecorgi.com/400/400" />
+        <img src="http://placecorgi.com/400" />
+      </div>
+
+      <a href="javascript:void(0)" class="slide-right">Prev</a>
+      <a href="javascript:void(0)" class="slide-left">Next</a>
+    </div>
+  </body>
+</html>
